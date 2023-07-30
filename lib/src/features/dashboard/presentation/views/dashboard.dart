@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:telehealth/src/features/dashboard/presentation/widgets/circularImageTextMenuItem.dart';
+import 'package:telehealth/src/features/dashboard/presentation/widgets/circular_image_text_menu_item.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -28,7 +28,7 @@ class _DashboardState extends State<Dashboard> {
         children: [
           SafeArea(
             child: Container(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

@@ -1,8 +1,9 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 import 'package:telehealth/core/utils/colors.dart';
 
 class MyButton extends StatelessWidget {
-  // ignore: prefer_typing_uninitialized_variables
   final String labelText;
   final double width;
   final ontap;
@@ -18,7 +19,7 @@ class MyButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return GestureDetector(
       onTap: ontap,
       child: Container(
         margin: const EdgeInsets.all(5),
@@ -39,7 +40,7 @@ class MyButton extends StatelessWidget {
             // ),
             // const SizedBox(width: 10.0),
             Text(
-              labelText!,
+              labelText,
               style: const TextStyle(
                 color: TheColors.white,
                 fontSize: 20,

@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:telehealth/src/features/auth/presentation/views/auth.dart';
 import 'package:telehealth/src/features/dashboard/presentation/views/dashboard.dart';
-import 'package:telehealth/src/features/splash/presentation/views/splashScreen.dart';
+import 'package:telehealth/src/features/splash/presentation/views/splash_screen.dart';
 
 final router = GoRouter(
   initialLocation: '/',

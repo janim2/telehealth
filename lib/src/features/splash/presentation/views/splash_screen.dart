@@ -54,9 +54,7 @@ class _SplashScreenState extends State<SplashScreen>
       backgroundColor: TheColors.green,
       body: SlideTransition(
         position: animation,
-        child: Container(
-            child: Center(
-                child: Image.asset("assets/images/logo_bg_removed.png"))),
+        child: Center(child: Image.asset("assets/images/logo_bg_removed.png")),
       ),
     );
   }

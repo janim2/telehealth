@@ -11,8 +11,8 @@ class LoginTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(16.0),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: ListView(
+        // mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const AuthField(
             labelHint: "Enter your email",
