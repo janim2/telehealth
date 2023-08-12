@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:telehealth/src/features/appointment/views/appointments.dart';
 import 'package:telehealth/src/features/auth/presentation/views/auth.dart';
 import 'package:telehealth/src/features/dashboard/presentation/views/dashboard.dart';
 import 'package:telehealth/src/features/health_related/views/health_info_details.dart';
@@ -30,10 +31,17 @@ final router = GoRouter(
         pageType: state.params['pageType'],
       ),
     ),
+    GoRoute(
+      path: '/appointments',
+      builder: (context, state) => const AppointmentsScreen(),
+    ),
     // GoRoute(
-    //   path: '/rooms',
-    //   builder: (context, state) => const RoomsPage(),
+    //   path: '/appointments/:pageType',
+    //   builder: (context, state) => HealthInfoDetailsScreen(
+    //     pageType: state.params['pageType'],
+    //   ),
     // ),
+
     // GoRoute(
     //   path: '/specific_room/:roomType',
     //   builder: (context, state) => SpecificRoomsPage(

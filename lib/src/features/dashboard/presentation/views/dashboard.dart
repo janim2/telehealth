@@ -55,9 +55,12 @@ class _DashboardState extends State<Dashboard> {
                       context.push("/health_related");
                     },
                   ),
-                  const CircularImageTextMenuItem(
+                  CircularImageTextMenuItem(
                     menuLabel: "Appointment Scheduling",
                     circularImageSource: "assets/images/calender.jpg",
+                    action: () {
+                      context.push("/appointments");
+                    },
                   ),
                   const CircularImageTextMenuItem(
                     menuLabel: "Medication Reminders",
