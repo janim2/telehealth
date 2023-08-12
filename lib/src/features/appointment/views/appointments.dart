@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:telehealth/src/features/health_related/widgets/my_nav_bar.dart';
 
 import '../widgets/doctors_info_card.dart';
@@ -42,8 +43,7 @@ class _DashboardState extends State<AppointmentsScreen> {
                     docName: "Dr. Alex Konadu",
                     docPosition: "General Practitioner",
                     action: () {
-                      // context.push(
-                      //     "/health_info_details/${"Healthy Eating and Nutrition"}");
+                      context.push("/book_appointments/${"Dr. Alex Konadu"}");
                     },
                   ),
                   DoctorInfoCard(
@@ -51,8 +51,7 @@ class _DashboardState extends State<AppointmentsScreen> {
                     docName: "Dr. Abigail",
                     docPosition: "Psychiatrist",
                     action: () {
-                      // context.push(
-                      //     "/health_info_details/${"Healthy Eating and Nutrition"}");
+                      context.push("/book_appointments/${"Dr. Abigail"}");
                     },
                   ),
                 ],

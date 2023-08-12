@@ -6,6 +6,8 @@ import 'package:telehealth/src/features/health_related/views/health_info_details
 import 'package:telehealth/src/features/health_related/views/health_related.dart';
 import 'package:telehealth/src/features/splash/presentation/views/splash_screen.dart';
 
+import 'features/appointment/views/book_appointments.dart';
+
 final router = GoRouter(
   initialLocation: '/',
   routes: [
@@ -35,12 +37,12 @@ final router = GoRouter(
       path: '/appointments',
       builder: (context, state) => const AppointmentsScreen(),
     ),
-    // GoRoute(
-    //   path: '/appointments/:pageType',
-    //   builder: (context, state) => HealthInfoDetailsScreen(
-    //     pageType: state.params['pageType'],
-    //   ),
-    // ),
+    GoRoute(
+      path: '/book_appointments/:drName',
+      builder: (context, state) => BookAppointmentsScreen(
+        drName: state.params['drName'],
+      ),
+    ),
 
     // GoRoute(
     //   path: '/specific_room/:roomType',
