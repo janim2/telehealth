@@ -8,6 +8,7 @@ class CircularImageTextMenuItem extends StatelessWidget {
   final action;
   final Color? theColor;
   final String? menuLabel;
+  final bool? showbgColor;
   final String? circularImageSource;
 
   // ignore: sort_constructors_first
@@ -16,6 +17,7 @@ class CircularImageTextMenuItem extends StatelessWidget {
       this.action,
       this.theColor = TheColors.darkGreen,
       this.menuLabel,
+      this.showbgColor = true,
       this.circularImageSource});
 
   @override
@@ -42,19 +44,19 @@ class CircularImageTextMenuItem extends StatelessWidget {
               ),
               CircularStructureWithWidgetInside(
                 widget: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(5.0),
                   child: SizedBox(
                     width: 210,
                     child: Text(
                       menuLabel!,
-                      style: const TextStyle(
-                        color: TheColors.white,
+                      style: TextStyle(
+                        color: showbgColor == true ? TheColors.white : theColor,
                         fontFamily: "CenturyGothic",
                       ),
                     ),
                   ),
                 ),
-                theColor: theColor,
+                theColor: showbgColor == true ? theColor! : Colors.transparent,
               ),
             ],
           ),

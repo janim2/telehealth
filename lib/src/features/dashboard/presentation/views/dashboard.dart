@@ -48,9 +48,12 @@ class _DashboardState extends State<Dashboard> {
                   const SizedBox(
                     height: 80,
                   ),
-                  const CircularImageTextMenuItem(
+                  CircularImageTextMenuItem(
                     menuLabel: "Health Related Educational Materials",
                     circularImageSource: "assets/images/medicine.jpg",
+                    action: () {
+                      context.push("/health_related");
+                    },
                   ),
                   const CircularImageTextMenuItem(
                     menuLabel: "Appointment Scheduling",
