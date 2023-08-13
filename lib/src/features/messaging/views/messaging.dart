@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telehealth/core/utils/colors.dart';
 
 import '../../health_related/widgets/my_nav_bar.dart';
 
@@ -13,6 +14,7 @@ class _MessagingScreenState extends State<MessagingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: TheColors.white,
       body: ListView(
         children: [
           SafeArea(
@@ -99,12 +101,12 @@ class ChatMessage extends StatelessWidget {
 }
 
 List<String> chatMessages = [
-  'Hello!',
-  'Hi there!',
-  'How are you?',
-  'I\'m doing great!',
-  'Flutter is awesome!',
-  'Yes, it is!',
-  'Let\'s build cool apps.',
   'Sure thing!',
+  'It has really improved my health',
+  'Yes, i have',
+  'have you been taking the medication',
+  'I\'m doing great!',
+  'How are you?',
+  'Hi there!',
+  'Hello!',
 ];

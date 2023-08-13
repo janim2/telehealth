@@ -4,11 +4,15 @@ import 'package:telehealth/src/features/auth/presentation/views/auth.dart';
 import 'package:telehealth/src/features/dashboard/presentation/views/dashboard.dart';
 import 'package:telehealth/src/features/health_related/views/health_info_details.dart';
 import 'package:telehealth/src/features/health_related/views/health_related.dart';
+import 'package:telehealth/src/features/medication_reminders/views/add_new_medication.dart';
+import 'package:telehealth/src/features/medication_reminders/views/reminders.dart';
 import 'package:telehealth/src/features/messaging/views/messaging.dart';
+import 'package:telehealth/src/features/messaging/views/secure_messaging.dart';
 import 'package:telehealth/src/features/splash/presentation/views/splash_screen.dart';
 import 'package:telehealth/src/features/video_consultation/views/video_chat.dart';
 import 'package:telehealth/src/features/video_consultation/views/video_consultation.dart';
 
+import 'features/appointment/views/appointment_booked.dart';
 import 'features/appointment/views/book_appointments.dart';
 
 final router = GoRouter(
@@ -66,6 +70,22 @@ final router = GoRouter(
       builder: (context, state) => VideoConferenceScreen(
         drName: state.params['drName'],
       ),
+    ),
+    GoRoute(
+      path: '/secure_messaging',
+      builder: (context, state) => const SecureMessagingScreen(),
+    ),
+    GoRoute(
+      path: '/medication_reminders',
+      builder: (context, state) => const MedicationsRemindersScreen(),
+    ),
+    GoRoute(
+      path: '/add_new_medication',
+      builder: (context, state) => const AddNewMedication(),
+    ),
+    GoRoute(
+      path: '/appointment_booked',
+      builder: (context, state) => const AppointmentBookedScreen(),
     ),
     // GoRoute(
     //     path: '/login',

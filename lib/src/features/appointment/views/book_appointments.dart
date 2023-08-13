@@ -223,7 +223,7 @@ class _DashboardState extends State<BookAppointmentsScreen> {
                           icon: Icons.arrow_forward,
                           ontap: () {
                             // showMsg("Welcome to Tele Health");
-                            // context.push("/dashboard");
+                            context.push("/appointment_booked");
                           },
                           width: 140,
                         ),

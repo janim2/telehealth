@@ -62,9 +62,12 @@ class _DashboardState extends State<Dashboard> {
                       context.push("/appointments");
                     },
                   ),
-                  const CircularImageTextMenuItem(
+                  CircularImageTextMenuItem(
                     menuLabel: "Medication Reminders",
                     circularImageSource: "assets/images/drugs.jpg",
+                    action: () {
+                      context.push("/medication_reminders");
+                    },
                   ),
                   CircularImageTextMenuItem(
                     menuLabel: "Videos Consultation",
@@ -73,9 +76,12 @@ class _DashboardState extends State<Dashboard> {
                       context.push("/video_consultation");
                     },
                   ),
-                  const CircularImageTextMenuItem(
+                  CircularImageTextMenuItem(
                     menuLabel: "Secure Messaging",
                     circularImageSource: "assets/images/chat.jpg",
+                    action: () {
+                      context.push("/secure_messaging");
+                    },
                   ),
                   CircularImageTextMenuItem(
                     action: () {

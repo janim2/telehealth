@@ -67,6 +67,7 @@ class _AuthScreenState extends State<AuthScreen>
               child: TabBar(
                 controller: _tabController,
                 unselectedLabelColor: TheColors.green,
+                labelColor: TheColors.white,
                 labelStyle: const TextStyle(
                   fontSize: 20,
                   fontFamily: "CenturyGothic",
@@ -76,8 +77,14 @@ class _AuthScreenState extends State<AuthScreen>
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                 ), // Set the background color of the selected TabBar
                 tabs: const [
-                  Tab(text: "Sign In"),
-                  Tab(text: 'Sign Up'),
+                  Padding(
+                    padding: EdgeInsets.only(left: 17.0, right: 17.0),
+                    child: Tab(text: "Sign In"),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 17.0, right: 17.0),
+                    child: Tab(text: 'Sign Up'),
+                  ),
                 ],
               ),
             ),
