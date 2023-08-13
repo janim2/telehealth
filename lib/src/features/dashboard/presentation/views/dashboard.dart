@@ -66,9 +66,12 @@ class _DashboardState extends State<Dashboard> {
                     menuLabel: "Medication Reminders",
                     circularImageSource: "assets/images/drugs.jpg",
                   ),
-                  const CircularImageTextMenuItem(
+                  CircularImageTextMenuItem(
                     menuLabel: "Videos Consultation",
                     circularImageSource: "assets/images/messaging.jpg",
+                    action: () {
+                      context.push("/video_consultation");
+                    },
                   ),
                   const CircularImageTextMenuItem(
                     menuLabel: "Secure Messaging",

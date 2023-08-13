@@ -4,7 +4,10 @@ import 'package:telehealth/src/features/auth/presentation/views/auth.dart';
 import 'package:telehealth/src/features/dashboard/presentation/views/dashboard.dart';
 import 'package:telehealth/src/features/health_related/views/health_info_details.dart';
 import 'package:telehealth/src/features/health_related/views/health_related.dart';
+import 'package:telehealth/src/features/messaging/views/messaging.dart';
 import 'package:telehealth/src/features/splash/presentation/views/splash_screen.dart';
+import 'package:telehealth/src/features/video_consultation/views/video_chat.dart';
+import 'package:telehealth/src/features/video_consultation/views/video_consultation.dart';
 
 import 'features/appointment/views/book_appointments.dart';
 
@@ -50,15 +53,20 @@ final router = GoRouter(
     //     roomType: state.params['roomType'],
     //   ),
     // ),
-    // GoRoute(
-    //   path: '/tv',
-    //   builder: (context, state) => const TvPage(),
-    // ),
-    // GoRoute(
-    //   path: '/lights',
-    //   builder: (context, state) => const LightsPage(),
-    // ),
-
+    GoRoute(
+      path: '/messaging',
+      builder: (context, state) => const MessagingScreen(),
+    ),
+    GoRoute(
+      path: '/video_consultation',
+      builder: (context, state) => const VideoConsultationScreen(),
+    ),
+    GoRoute(
+      path: '/video_conference/:drName',
+      builder: (context, state) => VideoConferenceScreen(
+        drName: state.params['drName'],
+      ),
+    ),
     // GoRoute(
     //     path: '/login',
     //     builder: (context, state) => const LoginPage(),

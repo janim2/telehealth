@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:telehealth/core/utils/colors.dart';
 import 'package:telehealth/src/features/dashboard/presentation/widgets/circular_structure_with_widget_inside.dart';
 import 'package:telehealth/src/features/health_related/widgets/my_nav_bar.dart';
@@ -210,7 +211,7 @@ class _DashboardState extends State<BookAppointmentsScreen> {
                           icon: Icons.chat,
                           ontap: () {
                             // showMsg("Welcome to Tele Health");
-                            // context.push("/dashboard");
+                            context.push("/messaging");
                           },
                           width: 140,
                         ),
