@@ -49,6 +49,13 @@ class _DashboardState extends State<Dashboard> {
                     height: 80,
                   ),
                   CircularImageTextMenuItem(
+                    menuLabel: "Emergency Ambulance Service",
+                    circularImageSource: "assets/images/ambulance.png",
+                    action: () {
+                      context.push("/emergency");
+                    },
+                  ),
+                  CircularImageTextMenuItem(
                     menuLabel: "Health Related Educational Materials",
                     circularImageSource: "assets/images/medicine.jpg",
                     action: () {
@@ -79,6 +86,13 @@ class _DashboardState extends State<Dashboard> {
                   CircularImageTextMenuItem(
                     menuLabel: "Secure Messaging",
                     circularImageSource: "assets/images/chat.jpg",
+                    action: () {
+                      context.push("/secure_messaging");
+                    },
+                  ),
+                  CircularImageTextMenuItem(
+                    menuLabel: "Blood Donation",
+                    circularImageSource: "assets/images/blood-drop.png",
                     action: () {
                       context.push("/secure_messaging");
                     },

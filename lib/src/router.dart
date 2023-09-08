@@ -14,6 +14,7 @@ import 'package:telehealth/src/features/video_consultation/views/video_consultat
 
 import 'features/appointment/views/appointment_booked.dart';
 import 'features/appointment/views/book_appointments.dart';
+import 'features/emergency/presentation/views/emergency.dart';
 
 final router = GoRouter(
   initialLocation: '/',
@@ -87,6 +88,11 @@ final router = GoRouter(
       path: '/appointment_booked',
       builder: (context, state) => const AppointmentBookedScreen(),
     ),
+    GoRoute(
+      path: '/emergency',
+      builder: (context, state) => const EmergencyScreen(),
+    ),
+
     // GoRoute(
     //     path: '/login',
     //     builder: (context, state) => const LoginPage(),

@@ -10,13 +10,13 @@ void main() {
     await tester.pumpWidget(const MaterialApp(home: Dashboard()));
 
     // Verify that the logo image is displayed.
-    expect(find.byType(Image), findsNWidgets(7));
+    expect(find.byType(Image), findsNWidgets(9));
 
     // Verify that the "Welcome to Telehealth" text is displayed.
     expect(find.text("Welcome to Telehealth"), findsOneWidget);
 
     // Verify that all the CircularImageTextMenuItem widgets are displayed.
-    expect(find.byType(CircularImageTextMenuItem), findsNWidgets(6));
+    expect(find.byType(CircularImageTextMenuItem), findsNWidgets(8));
 
     // Verify that the "Logout" menu item is displayed.
     expect(find.text("Logout"), findsOneWidget);
